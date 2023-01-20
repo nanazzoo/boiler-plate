@@ -29,10 +29,9 @@ app.get('/', (req, res) => res.send('Hello World 안녕하세요!! 새해 복 �
 
 
 app.post('/register', (req, res) => {
+  
+  
   // 회원가입 시 필요한 정보들을 client에서 가져와 database에 넣어주기
-
-
-
   const user = new User(req.body)
 
 
